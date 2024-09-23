@@ -1,15 +1,15 @@
-# Gerenciador de Tarefas
+# Gerenciador de Livros
 
-# Lista para armazenar as tarefas
+# Lista para armazenar os ivros
 livros = []
 
-# Função para adicionar uma tarefa à lista
+# Função para adicionar um livro à lista
 def adicionar_livro():
     livro = input("Digite o novo livro: ")
     livros.append(livro)
     print(f"Livro '{livro}' adicionada com sucesso!\n")
 
-# Função para remover uma tarefa da lista
+# Função para remover um livro da lista
 def remover_livro():
     if not livros:
         print("Nenhum livro para remover.\n")
@@ -24,9 +24,9 @@ def remover_livro():
         else:
             print("Índice inválido!\n")
     except ValueError:
-        print("Erro! Por favor, insira um número.\n")
+        print("Erro! Insira um número.\n")
 
-# Função para exibir todas as livros
+# Função para exibir todos as livros
 def mostrar_livros():
     if not livros:
         print("Nenhum livro cadastrado.\n")
@@ -60,15 +60,5 @@ def menu():
 
 # Executar o programa
 menu()
-
-
-
-
-
-
-
-
-
-
 
 
